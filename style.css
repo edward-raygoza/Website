@@ -103,18 +103,86 @@ input, select {
 
 /* My code below */
 
+/*star tag selects all elements and applies anything inside brackets to all elements*/
+* {
+    text-decoration: none; /* removes underline under content*/
+}
+
 body {
-    background-color: #D9DAFF;
+    background-color: #C0C0C0
 }
 
 header {
-    background-color: #DADBFF;
+    background-color: #D3D3D3;
     width: 100%;
     height: 100px;
 }
-
+/* class of header name Eduardo Raygoza*/ 
 header .header-name {
     font-family: Roboto;
     font-size: 24px;
+    font-weight: 900; /*boldness*/
     color: #3D3F40;
+    text-transform: uppercase;
+    display: block; /*turns header name into block so it can be more easily styled to center*/
+    margin: 0 auto;
+    text-align: center;
+    /*creates a margin at the top and bottom between the top of website and name (Eduardo...)*/
+    padding: 20px 0; /*top_bottom    left_right*/
+}
+
+/*styling below is for the navigation with list and links*/
+header nav ul {
+    display: block;
+    margin: 0 auto; /*centers nagivigation content*/
+    width: fit-content;
+}
+
+header nav ul li{
+    display: inline-block; /*sets na ul li next to each other*/
+    float: left; /*Gets rid of small gaps between links*/
+    list-style: none; /*Gets rid of the bullet points*/
+    padding: 0 16px;
+}
+
+header nav ul li a {
+    font-family: Roboto;
+    font-size: 16px;
+    color: #3D3F40;
+}
+/*Removes link from header*/
+header .header-coursework {
+    display: none;
+}
+
+/*Index html page */
+.index-banner {
+    width: 100%;
+    height: calc(100vh - 100px); /*view height setting 100% of device height 100px is the height of header*/
+    background-image: url("images/universe.jpg");/*Gets image from folder to be used as banner*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; /*means that it'll cover entire banner no matter the height and width*/
+
+}
+
+/*styling content inside banner h2*/
+.index-banner h2 {
+    font-family: Roboto;
+    font-size: 28px;
+    color: #fff;
+    text-align: center;
+    font-weight: 600;
+    text-shadow: 2px 2px 8px #111 /*makes text visible over image*/
+
+}
+
+/*styling content inside banner h1*/
+.index-banner h1 {
+    font-family: Courgette;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    font-weight: 100;
+    text-shadow: 2px 2px 4px #111;
 }
