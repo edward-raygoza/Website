@@ -107,12 +107,20 @@ input, select {
 * {
     text-decoration: none; /* removes underline under content*/
 }
+/*makes content page visible because it was pushed up before*/
+main {
+    padding-top: 100px;
+}
 
 body {
-    background-color: #DCDCDC;
+    background-color: black;
 }
 
 header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
     background-color: #D3D3D3;
     width: 100%;
     height: 100px;
@@ -136,6 +144,7 @@ header nav ul {
     display: block;
     margin: 0 auto; /*centers nagivigation content*/
     width: fit-content;
+    
 }
 
 header nav ul li{
@@ -149,10 +158,37 @@ header nav ul li a {
     font-family: Roboto;
     font-size: 16px;
     color: #3D3F40;
+    text-transform: uppercase;
 }
 /*Removes link from header*/
 header .header-coursework {
     display: none;
+}
+
+/*Wesbite Responsiveness done after mobile designed first*/
+@media only screen and (min-width:1000px) {
+    header .header-name {
+        margin: 30px 0;
+        text-align: left;
+        /*creates a margin at the top and bottom between the top of website and name (Eduardo...)*/
+        padding: 0 20px 0px 40px; /*top_bottom    left_right*/
+        border-right: 3px solid black;
+        /*floating item to the left from top right corner*/
+        float: left;
+        line-height: 38px;
+    }
+
+    header nav ul {
+        margin: 20px 0 0 20px; /*centers nagivigation content*/
+        /*adding float because it needs to be on right side of logo*/
+        float: left;
+    }
+
+    header nav ul li a {
+        /*After float on header nav ul add a line height to push it down*/
+        line-height: 60px;
+        /*We have 60px, 100%height inside header, subtract the 60px from 100 which is 40 then we have 20 left over which is split into top and bottom of navigation.  */
+    }
 }
 
 /*Index html page */
@@ -197,19 +233,58 @@ header .header-coursework {
     text-shadow: 2px 2px 4px #111;
 }
 
-.index-About-Me {
-    margin: 10px;
-    width: calc(100% - 20px); /*10 pixels from each side of box(margin) so adding both sides gives us 20 pixels*/
-    height: 50px;
-    background-color: #F0F0F0;
-    text-align: center;
-    font-size: 20px;
+/* styling all divs inside containers*/
+.index-website-links div {
+    margin: 20px 20px 0px;
+    width: cal(100% - 40px);
+    height: 100px; /*Total height of box */
+    background-color: #f2f2f2;
 }
 
-.index-Portfolio {
+/* Styling text inside containers h3 tags*/
+.index-website-links div h3 {
+    font-family: Roboto;
+    font-size: 24px;
+    line-height: 100px; /*Total height of box is 100px. This is to center my text.*/
+    color: black;
     text-align: center;
+    font-weight: 200;
+    text-shadow: 2px 2px 4px #111;
+    text-transform: uppercase;
+
 }
 
-.index-Contact {
+/*Footer*/
+
+footer {
+    width: (100%-80px);/*40px from left 40 from right */
+    padding: 40px 40px; /*Top/bottom, left/right*/
+    background-color: #D3D3D3;
+    margin-top: 20px;
+    text-transform: uppercase;
+    overflow: hidden;
     text-align: center;
+
+}
+
+footer ul {
+    width: fit-content;
+    float: left;
+    padding-left: 20px;
+    text-align: center;
+
+}
+footer ul li {
+    display: block;
+    list-style: none;
+    text-align: center;
+    font-size: 30px;
+
+}
+footer ul li a {
+   font-family: Roboto;
+   font-size: 30px;
+   color: white;
+   line-height: 20px;
+   text-align: center;
 }
