@@ -283,8 +283,26 @@ footer ul li {
 }
 footer ul li a {
    font-family: Roboto;
-   font-size: 30px;
+   font-size: 24px;
    color: white;
    line-height: 20px;
    text-align: center;
+}
+.fab fa-linkedin {
+    color: blue;
+}
+
+/*About.html*/
+.about-me-info h2 {
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 200;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.about-me-info img {
+    display: block;
+    margin: 0 auto; /*centers pic by having it as block*/
 }
