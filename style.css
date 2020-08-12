@@ -195,7 +195,7 @@ header .header-coursework {
 .index-banner {
     width: 100%;
     height: calc(100vh - 100px); /*view height setting 100% of device height 100px is the height of header*/
-    background-image: url("images/universe.jpg");/*Gets image from folder to be used as banner*/
+    background-image: url("images/UCM.jpg");/*Gets image from folder to be used as banner*/
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover; /*means that it'll cover entire banner no matter the height and width*/
@@ -213,7 +213,7 @@ header .header-coursework {
 .index-banner h2 {
     font-family: Roboto;
     font-size: 28px;
-    color: #fff;
+    color: black;
     font-weight: 600;
     line-height: 60px;
     text-align: center;
@@ -227,7 +227,7 @@ header .header-coursework {
     font-family: Courgette;
     font-size: 24px;
     line-height: 40px; /*Add space in between characters*/
-    color: #fff;
+    color: black;
     text-align: center;
     font-weight: 150;
     text-shadow: 2px 2px 4px #111;
