@@ -1,265 +1,305 @@
-/* 
-html5doctor.com Reset Stylesheet
-v1.6.1
-Last Updated: 2010-09-17
-Author: Richard Clark - http://richclarkdesign.com 
-Twitter: @rich_clark
-*/
-
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
-b, i,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
-    margin:0;
-    padding:0;
-    border:0;
-    outline:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
-}
-
 body {
-    line-height:1;
-}
-
-article,aside,details,figcaption,figure,
-footer,header,hgroup,menu,nav,section { 
-    display:block;
-}
-
-nav ul {
-    list-style:none;
-}
-
-blockquote, q {
-    quotes:none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content:'';
-    content:none;
-}
-
-a {
-    margin:0;
-    padding:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
-}
-
-/* change colours to suit your needs */
-ins {
-    background-color:#ff9;
-    color:#000;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  #home {
+    background-color:  black;
+    padding-bottom: 1cm;
+    margin-left:-1cm;
+    margin-right:-1cm;
+    margin-top:-1cm;
+    padding-top: 1.5cm;
+    padding-bottom: 2cm;
+    height: 15mm;
+   }
+  
+  .topmenu {
+    color: whitesmoke;
+    margin: 10px;
+    padding: 20px;
+    font-size: 20px;
     text-decoration:none;
-}
-
-/* change colours to suit your needs */
-mark {
-    background-color:#ff9;
-    color:#000; 
-    font-style:italic;
-    font-weight:bold;
-}
-
-del {
-    text-decoration: line-through;
-}
-
-abbr[title], dfn[title] {
-    border-bottom:1px dotted;
-    cursor:help;
-}
-
-table {
-    border-collapse:collapse;
-    border-spacing:0;
-}
-
-/* change border colour to suit your needs */
-hr {
-    display:block;
-    height:1px;
-    border:0;   
-    border-top:1px solid #cccccc;
-    margin:1em 0;
-    padding:0;
-}
-
-input, select {
-    vertical-align:middle;
-}
-
-/* My code below */
-
-/*star tag selects all elements and applies anything inside brackets to all elements*/
-* {
-    text-decoration: none; /* removes underline under content*/
-}
-/*makes content page visible because it was pushed up before*/
-main {
-    padding-top: 100px;
-}
-
-body {
-    background-color: black;
-}
-
-header {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    background-color: #D3D3D3;
-    width: 100%;
-    height: 100px;
-}
-/* class of header name Eduardo Raygoza*/ 
-header .header-name {
-    font-family: Roboto;
-    font-size: 24px;
-    font-weight: 900; /*boldness*/
-    color: #3D3F40;
-    text-transform: uppercase;
-    display: block; /*turns header name into block so it can be more easily styled to center*/
-    margin: 0 auto;
+  }
+  
+  .topmenu:hover {
+    color: whitesmoke;
+    font-weight: bolder;
+    text-decoration: underline;
+  }
+  
+  .topdiv {
+    float: right;
+    padding-right: 1cm;
+  }
+  
+  .profile_name {
+    font-size: 30px;
+    float: left;
+    padding-left: 2cm;
+    color: whitesmoke;
+    /* Add the styles here */
+  }
+  
+  .profile_name .contact_info {
+    font-size: 20px;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+  
+  .contact_info img {
+    width:25px;
+    margin-right: 10px;
+    float:left;
+  }
+  
+  /* Titles */
+  
+  h2 {
+    text-align: justify;
+    font-size: 50px;
     text-align: center;
-    /*creates a margin at the top and bottom between the top of website and name (Eduardo...)*/
-    padding: 20px 0; /*top_bottom    left_right*/
-}
-
-/*styling below is for the navigation with list and links*/
-header nav ul {
-    display: block;
-    margin: 0 auto; /*centers nagivigation content*/
-    width: fit-content;
-    
-}
-
-header nav ul li{
-    display: inline-block; /*sets na ul li next to each other*/
-    float: left; /*Gets rid of small gaps between links*/
-    list-style: none; /*Gets rid of the bullet points*/
-    padding: 0 16px;
-}
-
-header nav ul li a {
-    font-family: Roboto;
-    font-size: 16px;
-    color: #3D3F40;
-    text-transform: uppercase;
-}
-/*Removes link from header*/
-header .header-coursework {
-    display: none;
-}
-
-/*Wesbite Responsiveness done after mobile designed first*/
-@media only screen and (min-width:1000px) {
-    header .header-name {
-        margin: 30px 0;
-        text-align: left;
-        /*creates a margin at the top and bottom between the top of website and name (Eduardo...)*/
-        padding: 0 20px 0px 40px; /*top_bottom    left_right*/
-        border-right: 3px solid black;
-        /*floating item to the left from top right corner*/
-        float: left;
-        line-height: 38px;
-    }
-
-    header nav ul {
-        margin: 20px 0 0 20px; /*centers nagivigation content*/
-        /*adding float because it needs to be on right side of logo*/
-        float: left;
-    }
-
-    header nav ul li a {
-        /*After float on header nav ul add a line height to push it down*/
-        line-height: 60px;
-        /*We have 60px, 100%height inside header, subtract the 60px from 100 which is 40 then we have 20 left over which is split into top and bottom of navigation.  */
-    }
-}
-
-/*Index html page */
-.index-banner {
-    width: 100%;
-    height: calc(100vh - 100px); /*view height setting 100% of device height 100px is the height of header*/
-    background-image: url("images/UCM.jpg");/*Gets image from folder to be used as banner*/
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover; /*means that it'll cover entire banner no matter the height and width*/
-    display: table;
-}
-
-.center-vertical {
-/*making banner into table and aligning in center*/
-    display: table-cell;
+    float: left;
+    color: black;
+    margin: 30px;
+    margin-left: 60px;
+    margin-top: 40px;
+    margin-bottom: 0px;
+  }
+  
+  .introduction {
+    text-align: justify;
+    font-size: 30px;
+    text-align: center;
+    float: left;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    animation-duration: 5s;
+    position: relative;
+  }
+  
+  /* Used in the About Me sections */
+  
+  .container {
+    display: flex;
+  }
+  
+  /* About Me */
+  
+  .about-me {
+    display: flex;
+    align-items: center;
+  }
+  
+  #about-me h1 {
+    font-size: 65px;
+    margin-top: 90px;
+    margin-left: 50px;
+    color: black;
+  }
+  
+  #about-me p {
+    font-size: 25px;
+    color: rgb(128, 128, 128);
+    margin-top: -1cm;
+    margin-left: 50px;
+  }
+  
+  .profile_image {
+    width: 250px;
+    height: fit-content;
     vertical-align: middle;
-
-}
-
-/*styling content inside banner h2*/
-.index-banner h2 {
-    font-family: Roboto;
-    font-size: 28px;
-    color: black;
-    font-weight: 600;
-    line-height: 60px;
+    border-radius: 50%;
+    margin: 20px;
+  }
+  
+  /* Skills */
+  
+  .all_skills {
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+  }
+  
+  .skill {
+    border: 1px solid gray;
+    display: block;
+    border-radius: 6px;
     text-align: center;
-    font-weight: 600;
-    text-shadow: 2px 2px 8px #111 /*makes text visible over image*/
-
-}
-
-/*styling content inside banner h1*/
-.index-banner h1 {
-    font-family: Courgette;
-    font-size: 24px;
-    line-height: 40px; /*Add space in between characters*/
-    color: black;
+    margin: 50px;
+    padding: 10px;
+    width: 2in;
+    font-size: 20px;
+    box-shadow: 0 3px 10px gray;
+  }
+  
+  .skill img {
+    height: 35px;
+    align-items: center;
+  }
+  
+  .skills h6 {
+    align-items: center;
+    font-size: 20px;
+    margin-block-start: 8px;
+    margin-block-end: 5px;
+    font-weight: bold;
+  } 
+  
+  .skills p {
+    align-items: center;
+    font-size: 15px;
+    color: gray;
+    margin-block-start: 5px;
+    margin-block-end: 5px;
+  } 
+  
+  .flex_center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Projects */
+  
+  .projects-container {
+    margin-top: 30px;
+    margin-left: 60px;
+  }
+  
+  .projects-container hr {
+    border: 1px solid lightgray;
+    width: 75%;
+    margin-left: 5cm;
+  }
+  
+  .project-card {
+    margin: 0 15px 15px 30px;
+    padding-bottom: 5px;
+  }
+  
+  .project-card h3 {
+    font-size: 25px;
+    margin-left: 30px;
+  }
+  
+  .project-card li {
+    font-size: 20px;
+    margin-left: 30px;
+  }
+  
+  
+  
+  /* Scroll to Top Button */
+  
+  .iconbutton{
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    background-color: lightgrey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 3%;
+    bottom: 3%;
+    cursor: pointer;
+  }
+  
+  /* Form Pop-up */
+  
+  .popup {
+    width:400px;
+    background-color: lightgray;
+    border-radius: 3mm;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
     text-align: center;
-    font-weight: 150;
-    text-shadow: 2px 2px 4px #111;
-}
-
-/* styling all divs inside containers*/
-.index-website-links div {
-    margin: 20px 20px 0px;
-    width: cal(100% - 40px);
-    height: 100px; /*Total height of box */
-    background-color: #f2f2f2;
-}
-
-/* Styling text inside containers h3 tags*/
-.index-website-links div h3 {
-    font-family: Roboto;
-    font-size: 24px;
-    line-height: 100px; /*Total height of box is 100px. This is to center my text.*/
-    color: black;
+    position: fixed;
+    /* padding: 30px; */
+    visibility: hidden;
+  }
+  
+  .popup img {
+    padding-top: 20px;
+  }
+  
+  .popup button {
+    background-color: #fff;
+    border: 1px solid #7600bc;
+    color: #7600bc;
+    display: block;
+    border-radius: 6px;
     text-align: center;
-    font-weight: 200;
-    text-shadow: 2px 2px 4px #111;
-    text-transform: uppercase;
+    margin: 50px;
+    padding: 10px;
+    width: 2in;
+    font-size: 20px;
+    margin-left: 25%;
+  }
+  
+  .popup button:hover {
+    background-color: #fff;
+    border: 2px solid #7600bc;
+    color: #7600bc;
+    display: block;
+    font-weight: bolder;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 25%;
+  }
+  
+  /* Recommendation Form */
+  
+  input, textarea {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    margin: 10px;  
+    width:100%;
+  }
+  
+  fieldset {
+    display: flexbox;
+    align-content: center;
+    justify-content: center;  
+    padding: 25px; 
+    margin-left: 50px; 
+    margin-right: 50px;   
+    border: thin solid black;
+    width: 50%;
+  }
+  
+  /* Buttons */
+  
+  button {
+    background-color: #fff;
+    border: 1px solid #7600bc;
+    color: #7600bc;
+    display: block;
+    border-radius: 6px;
+    text-align: center;
+    margin: 50px;
+    padding: 10px;
+    width: 2in;
+    font-size: 20px;
+  }
+  
+  button:hover {
+    background-color: #7600bc;
+    border: 1px solid #7600bc;
+    color: black;
+    display: block;
+    border-radius: 6px;
+    text-align: center;
+    cursor: pointer;
+  }
 
-}
 
-/*Footer*/
-
-footer {
-    width: (100%-80px);/*40px from left 40 from right */
-    padding: 40px 40px; /*Top/bottom, left/right*/
-    background-color: #D3D3D3;
+  footer {
+    width: (100%-60px);/*40px from left 40 from right */
+    padding: 20px 20px; /*Top/bottom, left/right*/
+    background-color: black; 
     margin-top: 20px;
     text-transform: uppercase;
     overflow: hidden;
@@ -267,42 +307,17 @@ footer {
 
 }
 
-footer ul {
-    width: fit-content;
-    float: left;
-    padding-left: 20px;
-    text-align: center;
-
-}
-footer ul li {
-    display: block;
-    list-style: none;
-    text-align: center;
-    font-size: 30px;
-
-}
-footer ul li a {
-   font-family: Roboto;
-   font-size: 24px;
-   color: white;
-   line-height: 20px;
-   text-align: center;
-}
-.fab fa-linkedin {
-    color: blue;
+footer a {
+  display: inline-block;
+  margin: 50px
 }
 
-/*About.html*/
-.about-me-info h2 {
-    font-family: Roboto;
-    font-size: 20px;
-    font-weight: 200;
-    color: white;
-    text-align: center;
-    text-transform: uppercase;
+footer img {
+  width: 120px;
+  height: 110px;
+  cursor: pointer;
+  background-image: transparent;
 }
 
-.about-me-info img {
-    display: block;
-    margin: 0 auto; /*centers pic by having it as block*/
-}
+
+

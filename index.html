@@ -1,66 +1,179 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">  
-    <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet"> 
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/75f05b7820.js"></script>
-</head>
-<body>
-    <header>
-        <!-- Logo goes here which is my name and linking it to my front page-->
-        <a href="index.html" class="header-name">Eduardo Raygoza</a>
-        <nav>
+<html>
+  <head>
+    <title>Edward - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Eduardo Raygoza
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          edward12raygoza@gmail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +1 (626) 341-7955
+
+        </div>
+        </div>
+
+        <div class="topdiv">
+          <a class="topmenu" href="#projects">Projects</a>
+         </div>
+
+        <div class="topdiv">
+          <a class="topmenu" href="#skills">Skills</a>
+         </div>
+
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+
+        </div>
+
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="html_finalprojimages/eduardo.jpg" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Eduardo!
+          </h1>
+          <p>
+            I am a software developer with experience at IBM. As a full stack developer
+            my expertise lies in Java and Web Technologies. I have successfully worked with 
+            microservices, React, Node.js, Perl and python while at IBM. I am well
+            versed in utilizing Git version control for efficient collaboration and code management.
+            I am always open to opportunities where I can contribute and grow as a developer.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Programming Languages/Technologies</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+
+        <div class="skill">
+          <img src="html_finalprojimages/python.png"/>
+          <h6>Python</h6>
+          <p>4 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>2 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>2 years experience</p>
+        </div>  
+
+        <!-- Add more skills here -->
+        <div class="skill">
+          <img src="html_finalprojimages/flutter.png"/>
+          <h6>Flutter</h6>
+          <p>2 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/react.png"/>
+          <h6>React</h6>
+          <p>6 months experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/java.png"/>
+          <h6>Java</h6>
+          <p>3 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/CSS3.png"/>
+          <h6>CSS</h6>
+          <p>2 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/cpp.png"/>
+          <h6>C++</h6>
+          <p>4 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/azure.png"/>
+          <h6>Azure Cloud</h6>
+          <p>1 years experience</p>
+        </div> 
+
+        <div class="skill">
+          <img src="html_finalprojimages/firebase.png"/>
+          <h6>Google FireBase</h6>
+          <p>1 years experience</p>
+        </div> 
+
+        <div class="skill">
+          <img src="html_finalprojimages/perl.png"/>
+          <h6>Perl</h6>
+          <p>7 Months experience</p>
+        </div>
+
+        <div class="skill">
+          <img src="html_finalprojimages/git.png"/>
+          <h6>Git Version Control</h6>
+          <p>4 years experience</p>
+        </div>
+
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects and Experience
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Title</h3>
             <ul>
-                <li><a href="Portfolio.html">Portfolio</a></li>
-                <li><a href="About.html">About me</a></li>
-                <li><a href="Contact.html">Contact me</a></li>
+              <ul> 
+                <li>item</li>
+                <li>item</li>
+                <li>item</li>
             </ul>
-            
-        </nav>
-    </header>
-    <main>
-        <!--Section where my banner will go at; Background image with text over it -->
-        <section class="index-banner">
-            <div class="center-vertical">
-                <h1>Currently Updating Portfolio</h1>
-                <h2>A Computer Science Student in pursuit of becoming a Software Engineer</h2>
-                <h1>Interested in Full Stack development and Machine Learning.</h1>
-            </div>
-        </section>
-        <section class="index-website-links">
-        <a href='Portfolio.html'>
-            <div class="index-Boxlink-1">
-                <h3>Portfolio</h3>
-            </div>
-        </a>
-        <a href='About.html'>
-            <div class="index-Boxlink-2">
-                <h3>About Me</h3>
-            </div>
-        </a>
-        <a href='Contact.html'>    
-            <div class="index-Boxlink-3">
-                <h3>Contact Me</h3>
-            </div>
-        </a>    
-        </section>
-    </main>
+          </div>
+          <hr>
+
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
 
     <footer>
-        <ul class="Main">
-            <li>Linkedin:<a href='https://www.linkedin.com/in/eduardo-raygoza-226185146/'><i class="fab fa-linkedin"></i></a></li>
-        </ul>
-        <ul>
-            <li>GitHub:<a href='https://github.com/edward-raygoza'>
-                <i class="fab fa-github"></i>
-            </a></li>
-        </ul>
+      <a href='https://www.linkedin.com/in/eduardo-raygoza-226185146/'><img src="html_finalprojimages/in.png"> </a>
+      <a href='https://www.linkedin.com/in/eduardo-raygoza-226185146/'><img src="html_finalprojimages/images-removebg-preview.png"> </a> 
+
+
 
     </footer>
-</body>
+  </body>
 </html>
